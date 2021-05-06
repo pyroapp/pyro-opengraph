@@ -1,7 +1,9 @@
 const opengraph = require('open-graph');
 const express = require('express');
+const cors = require('cors');
 
 const api = express();
+api.use(cors());
 
 api.get('/', async (req, res) => {
     try {
