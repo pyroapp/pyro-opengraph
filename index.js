@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
         res.status(418).json({
             success: false,
             error: error.message,
-            usage: "url",
+            usage: "URL",
             sent: req.body
         })
 
